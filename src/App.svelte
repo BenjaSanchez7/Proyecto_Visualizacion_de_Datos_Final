@@ -36,9 +36,8 @@
   </div>
 
   <p class="intro">Los Juegos Olímpicos de París 2024 marcaron un hito al reunir a más de 10.000 atletas de 204 países en 32 disciplinas
-     deportivas, celebradas en escenarios emblemáticos de la capital francesa. Durante 16 días de intensa competencia, se
-      vivieron momentos inolvidables que destacaron el espíritu deportivo y la excelencia atlética. A continuacion un breve
-    video con lo que fue lo mejor de Paris 2024...</p>
+     deportivas, celebradas en escenarios emblemáticos de la capital francesa. Durante 13 días de intensa competencia, se
+      vivieron momentos inolvidables que destacaron el espíritu deportivo y la excelencia atlética.</p>
 
   
 
@@ -78,23 +77,47 @@
       desempeño.¿Fue esto un impulso o una carga para los atletas franceses en París 2024?
       Para responder esta pregunta, vamos a retroceder en el tiempo y analizar
       cómo se ha comportado Francia en comparación con una potencia histórica como Estados Unidos,
-      contrastando sus resultados en esta edición con los de los Juegos anteriores</p>
+      contrastando sus resultados en esta edición con los de los Juegos anteriores.</p>
   
       <div class="graficos-wrapper">
         <section class="graficos-container">
-          <div class="flourish-embed flourish-chart" data-src="visualisation/22674075">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript>
-              <img src="https://public.flourish.studio/visualisation/22674075/thumbnail" width="100%" alt="chart visualization" />
-            </noscript>
+          <div class="datawrapper-embed">
+            <iframe title="Comparación de Medallas Estados Unidos vs Francia " aria-label="Bullet Bars" id="datawrapper-chart-UYBsM" src="https://datawrapper.dwcdn.net/UYBsM/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="353" data-external="1"></iframe>
           </div>
+          <script type="text/javascript">
+            window.addEventListener("message", function (event) {
+              if (event.data["datawrapper-height"]) {
+                const iframes = document.querySelectorAll("iframe");
+                for (let chartId in event.data["datawrapper-height"]) {
+                  for (let i = 0; i < iframes.length; i++) {
+                    if (iframes[i].contentWindow === event.source) {
+                      iframes[i].style.height = event.data["datawrapper-height"][chartId] + "px";
+                    }
+                  }
+                }
+              }
+            });
+          </script>
+          
       
-          <div class="flourish-embed flourish-chart" data-src="visualisation/22561745">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-            <noscript>
-              <img src="https://public.flourish.studio/visualisation/22561745/thumbnail" width="100%" alt="chart visualization" />
-            </noscript>
+          <div class="datawrapper-embed">
+            <iframe title="Medallas Ganadas en el transcurso de los JJOO" aria-label="Interactive line chart" id="datawrapper-chart-fnwoZ" src="https://datawrapper.dwcdn.net/fnwoZ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="396" data-external="1"></iframe>
           </div>
+          <script type="text/javascript">
+            window.addEventListener("message", function (event) {
+              if (event.data["datawrapper-height"]) {
+                const iframes = document.querySelectorAll("iframe");
+                for (let chartId in event.data["datawrapper-height"]) {
+                  for (let i = 0; i < iframes.length; i++) {
+                    if (iframes[i].contentWindow === event.source) {
+                      iframes[i].style.height = event.data["datawrapper-height"][chartId] + "px";
+                    }
+                  }
+                }
+              }
+            });
+          </script>
+          
         </section>
       </div>
       
@@ -274,6 +297,14 @@
   margin-bottom: 0px;
 }
 
+.datawrapper-embed {
+  flex: 1;
+  max-width: 48%;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+
   .graficos-container {
     display: flex;
     justify-content: space-between;
@@ -325,4 +356,4 @@
   .social-link:hover {
     text-decoration: underline;
   }
-</style> 
+</style>
