@@ -197,7 +197,7 @@
   :global(body) {
     margin: 0;
     font-family: 'Avenir', sans-serif;
-    background-image: url("public/images/Olimpicosv2.jpg");
+    background-image: url("/images/Olimpicosv2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
