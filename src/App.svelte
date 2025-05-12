@@ -44,21 +44,31 @@
   <h2>Medallero Olimpico </h2>
   <h6>(1 ícono = 4 medallas reales)</h6>
 
-  {#each paises as pais, i}
+  {#each paises as pais}
   <div class="fila">
     <div class="etiqueta">
       <img src={`/images/${pais.nombre}.svg`} alt={pais.nombre} class="bandera" />
     </div>
+
     <div class="medallas-container">
-      <div class="medallas" style="width: {escalaColumnas(pais.oro / escalaFactor)}px">
-        {#each Array(Math.floor(pais.oro / escalaFactor)) as _, j}
-          <img src="/images/medalla.svg" alt="medalla de oro" class="medalla" />
-        {/each}
+      <!-- FILA ORO -->
+      <div class="fila-medalla">
+        <div class="medallas">
+          {#each Array(Math.floor(pais.oro / escalaFactor)) as _, j}
+            <img src="/images/medalla.svg" alt="medalla de oro" class="medalla" />
+          {/each}
+        </div>
+        <div class="numero-derecha oro">{pais.oro}</div>
       </div>
-      <div class="medallas" style="width: {escalaColumnas(pais.plata / escalaFactor)}px">
-        {#each Array(Math.floor(pais.plata / escalaFactor)) as _, j}
-          <img src="/images/Medalla_plata.svg" alt="medalla de plata" class="medalla" />
-        {/each}
+
+      <!-- FILA PLATA -->
+      <div class="fila-medalla">
+        <div class="medallas">
+          {#each Array(Math.floor(pais.plata / escalaFactor)) as _, j}
+            <img src="/images/Medalla_plata.svg" alt="medalla de plata" class="medalla" />
+          {/each}
+        </div>
+        <div class="numero-derecha plata">{pais.plata}</div>
       </div>
     </div>
   </div>
@@ -67,58 +77,46 @@
 
 
 
+
   <h2 class="graficos-header">La localía ayudó a Francia en 2024</h2>
 
-     <p class="texto-graficos-header">Competir como país anfitrión suele ser una ventaja significativa para los atletas,
-      ya que la familiaridad con el entorno, el apoyo del público local y la reducción del 
-      estrés logístico pueden mejorar su rendimiento. Sin embargo, esta localía también puede 
-      transformarse en una fuente de presión adicional, ya que las expectativas de la nación
-      están puestas sobre ellos, lo que puede afectar tanto positiva como negativamente su
-      desempeño.¿Fue esto un impulso o una carga para los atletas franceses en París 2024?
-      Para responder esta pregunta, vamos a retroceder en el tiempo y analizar
-      cómo se ha comportado Francia en comparación con una potencia histórica como Estados Unidos,
-      contrastando sus resultados en esta edición con los de los Juegos anteriores.</p>
+  <p class="texto-graficos-header">
+    A lo largo de las ediciones modernas de los Juegos Olímpicos, el rendimiento de los países ha estado influido por múltiples factores: inversión en deporte, estructura de entrenamiento, contexto político e incluso localía. En el primer gráfico, observamos la evolución comparada entre Estados Unidos y Francia desde 1988 hasta 2024. Este análisis permite identificar patrones de mejora, estancamiento o caídas en el rendimiento de ambas naciones, incluyendo el impacto de ser anfitrión.
+    
+    En el segundo gráfico se muestra cómo progresaron día a día dos potencias emergentes y contrastantes: China y Brasil. Esta visualización revela estrategias distintas en cuanto al ritmo y distribución de las medallas a lo largo de la competencia, lo que nos permite reflexionar sobre enfoques tácticos y su efectividad en el tiempo.
+    </p>
   
       <div class="graficos-wrapper">
         <section class="graficos-container">
+          <!-- Gráfico 1: Comparación histórica -->
           <div class="datawrapper-embed">
-            <iframe title="Comparación de Medallas Estados Unidos vs Francia " aria-label="Bullet Bars" id="datawrapper-chart-UYBsM" src="https://datawrapper.dwcdn.net/UYBsM/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="353" data-external="1"></iframe>
+            <iframe title="Comparación Desempeño historico USA vs Francia"
+              aria-label="Bullet Bars"
+              id="datawrapper-chart-c5R06"
+              src="https://datawrapper.dwcdn.net/c5R06/1/"
+              scrolling="no"
+              frameborder="0"
+              style="width: 0; min-width: 100% !important; border: none;"
+              height="400"
+              data-external="1">
+            </iframe>
           </div>
-          <script type="text/javascript">
-            window.addEventListener("message", function (event) {
-              if (event.data["datawrapper-height"]) {
-                const iframes = document.querySelectorAll("iframe");
-                for (let chartId in event.data["datawrapper-height"]) {
-                  for (let i = 0; i < iframes.length; i++) {
-                    if (iframes[i].contentWindow === event.source) {
-                      iframes[i].style.height = event.data["datawrapper-height"][chartId] + "px";
-                    }
-                  }
-                }
-              }
-            });
-          </script>
-          
-      
+        
+          <!-- Gráfico 2: Medallas por día -->
           <div class="datawrapper-embed">
-            <iframe title="Medallas Ganadas en el transcurso de los JJOO" aria-label="Interactive line chart" id="datawrapper-chart-fnwoZ" src="https://datawrapper.dwcdn.net/fnwoZ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="396" data-external="1"></iframe>
+            <iframe title="Medallas obtenidas por Día"
+              aria-label="Interactive line chart"
+              id="datawrapper-chart-xaWio"
+              src="https://datawrapper.dwcdn.net/xaWio/1/"
+              scrolling="no"
+              frameborder="0"
+              style="width: 0; min-width: 100% !important; border: none;"
+              height="400"
+              data-external="1">
+            </iframe>
           </div>
-          <script type="text/javascript">
-            window.addEventListener("message", function (event) {
-              if (event.data["datawrapper-height"]) {
-                const iframes = document.querySelectorAll("iframe");
-                for (let chartId in event.data["datawrapper-height"]) {
-                  for (let i = 0; i < iframes.length; i++) {
-                    if (iframes[i].contentWindow === event.source) {
-                      iframes[i].style.height = event.data["datawrapper-height"][chartId] + "px";
-                    }
-                  }
-                }
-              }
-            });
-          </script>
-          
         </section>
+        
       </div>
       
       
@@ -197,7 +195,7 @@
   :global(body) {
     margin: 0;
     font-family: 'Avenir', sans-serif;
-    background-image: url("/images/Olimpicosv2.jpg");
+    background-image: url("public/images/Olimpicosv2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -207,7 +205,7 @@
   main {
     position: relative;
     z-index: 1;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     border-radius: 12px;
@@ -230,46 +228,68 @@
   }
 
   .fila {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    width: 100%; 
-    padding: 0; 
-    margin-left: 0;
-    margin-right: 0; 
-  }
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  padding: 0;
+}
 
-  .etiqueta {
-    width: 160px;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
+.etiqueta {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .bandera {
-    width: 70px;
-    height: auto;
-  }
+.bandera {
+  width: 70px;
+  height: auto;
+}
 
-  .medallas-container {
+.medallas-container {
   display: flex;
   flex-direction: column;
-  gap: 5px; /* Espacio entre oro y plata */
+  gap: 5px;
+  width: 100%;
+}
+
+.fila-medalla {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px; /* Ajustá para que el número quede justo en el margen derecho */
 }
 
 .medallas {
   display: flex;
+  gap: 2px;
   flex-wrap: nowrap;
-  gap: 1px;
-  align-items: center;
+  flex: 1;
 }
 
 .medalla {
   width: 36px;
   height: 36px;
 }
+
+.numero-derecha {
+  width: 60px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: 'Avenir', sans-serif;
+}
+
+.numero-derecha.oro {
+  color: #DAA520;
+}
+
+.numero-derecha.plata {
+  color: #C0C0C0;
+}
+
 
 
 
@@ -357,4 +377,3 @@
     text-decoration: underline;
   }
 </style>
-
