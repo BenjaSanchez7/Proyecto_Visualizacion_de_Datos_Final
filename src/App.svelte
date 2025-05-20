@@ -31,12 +31,12 @@
 <main>
   <div class="header-container">
     <img src="/images/logo.png" alt="Logo JJOO" class="logo-jjoo" />
-    <h1>Juegos Olimpicos: Paris 2024</h1>
+    <h1>Juegos Olímpicos: París 2024</h1>
     <img src="/images/paris.png" alt="Logo París 2024" class="logo-paris" />
   </div>
 
   <p class="intro">Los Juegos Olímpicos de París 2024 marcaron un hito al reunir a más de 10.000 atletas de 204 países en 32 disciplinas
-     deportivas, celebradas en escenarios emblemáticos de la capital francesa. Durante 13 días de intensa competencia, se
+     deportivas, celebradas en escenarios emblemáticos de la capital francesa. Durante 10 días de intensa competencia, se
       vivieron momentos inolvidables que destacaron el espíritu deportivo y la excelencia atlética.</p>
 
   
@@ -78,48 +78,79 @@
 
 
 
-  <h2 class="graficos-header">La localía ayudó a Francia en 2024</h2>
+<h2 class="graficos-header">Comparación de medallas de Paris 2024</h2>
 
-  <p class="texto-graficos-header">
-    A lo largo de las ediciones modernas de los Juegos Olímpicos, el rendimiento de los países ha estado influido por múltiples factores: inversión en deporte, estructura de entrenamiento, contexto político e incluso localía. En el primer gráfico, observamos la evolución comparada entre Estados Unidos y Francia desde 1988 hasta 2024. Este análisis permite identificar patrones de mejora, estancamiento o caídas en el rendimiento de ambas naciones, incluyendo el impacto de ser anfitrión.
-    
-    En el segundo gráfico se muestra cómo progresaron día a día dos potencias emergentes y contrastantes: China y Brasil. Esta visualización revela estrategias distintas en cuanto al ritmo y distribución de las medallas a lo largo de la competencia, lo que nos permite reflexionar sobre enfoques tácticos y su efectividad en el tiempo.
-    </p>
-  
-      <div class="graficos-wrapper">
-        <section class="graficos-container">
-          <!-- Gráfico 1: Comparación histórica -->
-          <div class="datawrapper-embed">
-            <iframe title="Comparación Desempeño historico USA vs Francia"
-              aria-label="Bullet Bars"
-              id="datawrapper-chart-c5R06"
-              src="https://datawrapper.dwcdn.net/c5R06/1/"
-              scrolling="no"
-              frameborder="0"
-              style="width: 0; min-width: 100% !important; border: none;"
-              height="400"
-              data-external="1">
-            </iframe>
-          </div>
-        
-          <!-- Gráfico 2: Medallas por día -->
-          <div class="datawrapper-embed">
-            <iframe title="Medallas obtenidas por Día"
-              aria-label="Interactive line chart"
-              id="datawrapper-chart-xaWio"
-              src="https://datawrapper.dwcdn.net/xaWio/1/"
-              scrolling="no"
-              frameborder="0"
-              style="width: 0; min-width: 100% !important; border: none;"
-              height="400"
-              data-external="1">
-            </iframe>
-          </div>
-        </section>
-        
-      </div>
-      
-      
+<p class="texto-graficos-header">
+</p>
+
+<div class="graficos-wrapper">
+  <section class="graficos-container">
+
+    <!-- Gráfico 1: Liderazgo en Medallas -->
+    <div class="datawrapper-embed">
+      <iframe 
+        title="Liderazgo en Medallas: Oro y Plata"
+        aria-label="Bar Chart"
+        id="datawrapper-chart-BsGD2"
+        src="https://datawrapper.dwcdn.net/BsGD2/2/"
+        scrolling="no"
+        frameborder="0"
+        style="width: 0; min-width: 100% !important; border: none;"
+        height="400"
+        data-external="1">
+      </iframe>
+      <script type="text/javascript">
+        !function() {
+          "use strict";
+          window.addEventListener("message", (function(a) {
+            if (void 0 !== a.data["datawrapper-height"]) {
+              var e = document.querySelectorAll("iframe");
+              for (var t in a.data["datawrapper-height"])
+                for (var r, i = 0; r = e[i]; i++)
+                  if (r.contentWindow === a.source) {
+                    var d = a.data["datawrapper-height"][t] + "px";
+                    r.style.height = d;
+                  }
+            }
+          }))
+        }();
+      </script>
+    </div>
+
+    <!-- Gráfico 2: Medallas de Oro y Plata por País -->
+    <div class="datawrapper-embed">
+      <iframe 
+        title="Comparación de Medallas de Oro y Plata por País"
+        aria-label="Stacked Bars"
+        id="datawrapper-chart-ceChV"
+        src="https://datawrapper.dwcdn.net/ceChV/1/"
+        scrolling="no"
+        frameborder="0"
+        style="width: 0; min-width: 100% !important; border: none;"
+        height="400"
+        data-external="1">
+      </iframe>
+      <script type="text/javascript">
+        !function() {
+          "use strict";
+          window.addEventListener("message", (function(a) {
+            if (void 0 !== a.data["datawrapper-height"]) {
+              var e = document.querySelectorAll("iframe");
+              for (var t in a.data["datawrapper-height"])
+                for (var r, i = 0; r = e[i]; i++)
+                  if (r.contentWindow === a.source) {
+                    var d = a.data["datawrapper-height"][t] + "px";
+                    r.style.height = d;
+                  }
+            }
+          }))
+        }();
+      </script>
+    </div>
+
+  </section>
+</div>
+
 
   <div class="video-container">
     <iframe 
@@ -195,7 +226,6 @@
   :global(body) {
     margin: 0;
     font-family: 'Avenir', sans-serif;
-    background-image: url("public/images/Olimpicosv2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -210,8 +240,8 @@
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
     margin: 2rem auto;
+    width: 1200px;
   }
 
   h2 {
@@ -259,7 +289,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-right: 50px; /* Ajustá para que el número quede justo en el margen derecho */
+  padding-right: 50px; 
 }
 
 .medallas {
@@ -322,6 +352,7 @@
   max-width: 48%;
   min-width: 300px;
   box-sizing: border-box;
+  
 }
 
 
