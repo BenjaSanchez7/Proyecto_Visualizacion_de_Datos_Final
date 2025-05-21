@@ -86,67 +86,23 @@
 <div class="graficos-wrapper">
   <section class="graficos-container">
 
-    <!-- Gráfico 1: Liderazgo en Medallas -->
-    <div class="datawrapper-embed">
-      <iframe 
-        title="Liderazgo en Medallas: Oro y Plata"
-        aria-label="Bar Chart"
-        id="datawrapper-chart-BsGD2"
-        src="https://datawrapper.dwcdn.net/BsGD2/2/"
-        scrolling="no"
-        frameborder="0"
-        style="width: 0; min-width: 100% !important; border: none;"
-        height="400"
-        data-external="1">
-      </iframe>
-      <script type="text/javascript">
-        !function() {
-          "use strict";
-          window.addEventListener("message", (function(a) {
-            if (void 0 !== a.data["datawrapper-height"]) {
-              var e = document.querySelectorAll("iframe");
-              for (var t in a.data["datawrapper-height"])
-                for (var r, i = 0; r = e[i]; i++)
-                  if (r.contentWindow === a.source) {
-                    var d = a.data["datawrapper-height"][t] + "px";
-                    r.style.height = d;
-                  }
-            }
-          }))
-        }();
-      </script>
-    </div>
+    <!-- Gráfico 1: Liderazgo en Medallas (Flourish) -->
+<div class="flourish-embed flourish-chart" data-src="visualisation/23327100">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript>
+    <img src="https://public.flourish.studio/visualisation/23327100/thumbnail" width="100%" alt="chart visualization" />
+  </noscript>
+</div>
 
-    <!-- Gráfico 2: Medallas de Oro y Plata por País -->
-    <div class="datawrapper-embed">
-      <iframe 
-        title="Comparación de Medallas de Oro y Plata por País"
-        aria-label="Stacked Bars"
-        id="datawrapper-chart-ceChV"
-        src="https://datawrapper.dwcdn.net/ceChV/1/"
-        scrolling="no"
-        frameborder="0"
-        style="width: 0; min-width: 100% !important; border: none;"
-        height="400"
-        data-external="1">
-      </iframe>
-      <script type="text/javascript">
-        !function() {
-          "use strict";
-          window.addEventListener("message", (function(a) {
-            if (void 0 !== a.data["datawrapper-height"]) {
-              var e = document.querySelectorAll("iframe");
-              for (var t in a.data["datawrapper-height"])
-                for (var r, i = 0; r = e[i]; i++)
-                  if (r.contentWindow === a.source) {
-                    var d = a.data["datawrapper-height"][t] + "px";
-                    r.style.height = d;
-                  }
-            }
-          }))
-        }();
-      </script>
-    </div>
+
+    <!-- Gráfico 2: Comparación por País (Flourish) -->
+<div class="flourish-embed flourish-chart" data-src="visualisation/23327751">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript>
+    <img src="https://public.flourish.studio/visualisation/23327751/thumbnail" width="100%" alt="chart visualization" />
+  </noscript>
+</div>
+
 
   </section>
 </div>
@@ -365,17 +321,14 @@
     flex-wrap: wrap;
     margin-bottom: 0px;
   }
-
   .flourish-embed {
-  flex: 1;
-  max-width: 48%;
-  min-width: 300px;
-  height: auto; /* 🔥 en lugar de height fijo */
-  aspect-ratio: 4/3; /* Mantiene buena proporción */
-  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 16/9; /* relación moderna que evita el corte */
+  max-width: 100%;
+  margin-bottom: 2rem;
   overflow: hidden;
-  margin-bottom: 0; /* 🔥 importante */
 }
+
 
 
 
